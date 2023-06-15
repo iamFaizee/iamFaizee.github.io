@@ -21,8 +21,11 @@ const About = () => {
         },800) 
     }
 
+    // id="about" class="about section" 
+
+    // id="aboutDiv" className='aboutContainer'
   return (
-    <Box id="aboutDiv" className='aboutContainer'  sx={{width:"80%",margin:"10% auto",padding:"0% 10px",display:"grid",gridTemplateColumns:"repeat(2,1fr)",gap:"25px"}}>
+    <Box id="about" className='about section'  sx={{width:"80%",margin:"10% auto",padding:"0% 10px",display:"grid",gridTemplateColumns:"repeat(2,1fr)",gap:"25px"}}>
         <Box sx={{borderTop:"2px solid rgb(35,53,84)",position:"relative"}} >
             <Zoom in={checked1}>
                 <Typography className='aboutHeading' variant='h4' sx={{color:"#00FF41",backgroundColor:"rgb(11,24,47)",position:"absolute",top:"-25px",padding:"0% 5% 0% 0%",fontFamily:"Poppins"}} >About Me</Typography>

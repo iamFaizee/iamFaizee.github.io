@@ -11,9 +11,10 @@ export const details={
     lastname:"",
     navList:["Home","About","Skills","Work","Contact"],
     scrollPosition:[0,545,1070,1730,3400],
-    className:["introDiv","aboutContainer","skillContainer","workDiv","contactDiv"],
-    linkedInLink:"https://www.linkedin.com/in/ankitofficial/",
-    githubLink:"https://github.com/AnkitRana26",
+    // className:["introDiv","about section","skillContainer","workDiv","contactDiv"],
+    className:["nav-link home","nav-link about","nav-link skills","nav-link projects","nav-link contact","nav-link resume"],
+    linkedInLink:"https://www.linkedin.com/in/faizan-khan-455216261/",
+    githubLink:"https://github.com/iamFaizee",
     instagramLink:"https://www.instagram.com/thetallboyankitr/",
     mailLink:"mailto:ranaankitr@outlook.com",
     techStack:[

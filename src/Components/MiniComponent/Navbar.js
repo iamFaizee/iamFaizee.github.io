@@ -1,4 +1,4 @@
-import { Box,  Button,  Slide, Typography } from "@mui/material";
+import { Box, Button, Slide, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import LinearDeterminate from "./ProgressComp";
 import logo from "../../media/logo.png";
@@ -7,20 +7,20 @@ import { details } from "../../details";
 import Scroll from "react-scroll-to-element";
 
 
-const Navbar = ({scollHandle}) => {
-    const [checked,setChecked]= useState(false);
+const Navbar = ({ scollHandle }) => {
+  const [checked, setChecked] = useState(false);
   const [hoverEffect, SetHoverEffect] = useState(0);
   const [scrolled, setScrolled] = useState(0);
 
-  const introLoaded=()=>{
-    setTimeout(()=>{
-        setChecked(true);
+  const introLoaded = () => {
+    setTimeout(() => {
+      setChecked(true);
 
-    },600)
-}
-    useEffect(()=>{
-        introLoaded();
-    },[])
+    }, 600)
+  }
+  useEffect(() => {
+    introLoaded();
+  }, [])
 
   const openResume = () => {
     window.open(
@@ -35,6 +35,7 @@ const Navbar = ({scollHandle}) => {
 
   return (
     <Box
+      id="nav-menu"
       className={scrolled >= 100 ? "navbarboxShadow" : ""}
       sx={{
         display: "flex",
@@ -43,7 +44,7 @@ const Navbar = ({scollHandle}) => {
         padding: "5px 1%",
         position: "sticky",
         top: "0%",
-        zIndex:"10"
+        zIndex: "10"
       }}
     >
       <Box
@@ -57,9 +58,9 @@ const Navbar = ({scollHandle}) => {
         }}
       >
         {/* <img className="logoImage" height={"70px"} width={"75px"} src={logo} /> */}
-        
+
       </Box>
-      <Box  className="logoBox" sx={{ display: "none" }}>
+      <Box className="logoBox" sx={{ display: "none" }}>
         {/* <img height={"70px"} width={"75px"} src={logo} /> */}
       </Box>
       <Box
@@ -75,41 +76,41 @@ const Navbar = ({scollHandle}) => {
         }}
       >
         {
-            details.navList.map((ele,index)=>{
-                return (
-                <Scroll offset={-150} type="class" element={details.className[index]}>
+          details.navList.map((ele, index) => {
+            return (
+              <Scroll offset={-150} type="class" element={details.className[index]}>
                 <Slide key={index} direction="down" in={checked}>
 
-                <Box
-                className="navbarList"
-                sx={{ cursor: "pointer" }}
-                onMouseOut={() => {
-                    SetHoverEffect(0);
-                  }}
-                  onMouseOver={() => SetHoverEffect(index+1)}
-                    >
-                <Typography variant="h5" sx={{fontSize:"1.1rem",fontFamily:"Poppins",color:'#00FF41' }}>{ele}</Typography>
-                {hoverEffect == index+1 ? (
-                    <LinearDeterminate color={"white"} />
+                  <Box
+                    className="navbarList"
+                    sx={{ cursor: "pointer" }}
+                    onMouseOut={() => {
+                      SetHoverEffect(0);
+                    }}
+                    onMouseOver={() => SetHoverEffect(index + 1)}
+                  >
+                    <Typography variant="h5" sx={{ fontSize: "1.1rem", fontFamily: "Poppins", color: '#00FF41' }}>{ele}</Typography>
+                    {hoverEffect == index + 1 ? (
+                      <LinearDeterminate color={"white"} />
                     ) : (
                       <Box sx={{ height: "4px" }}></Box>
-                      )}
-                </Box>
-            </Slide>
-                </Scroll>)
-            })
+                    )}
+                  </Box>
+                </Slide>
+              </Scroll>)
+          })
         }
 
-       
+
         <Box onClick={openResume}>
           <Button variant="outlined"
             sx={{
               border: "1px solid #008F11",
               color: "#00FF41",
               fontSize: "0.8rem",
-              fontFamily:"Poppins"
+              fontFamily: "Poppins"
             }}>Resume</Button>
-          <LinearDeterminate color={"transparent"}/>
+          <LinearDeterminate color={"transparent"} />
         </Box>
       </Box>
     </Box>
