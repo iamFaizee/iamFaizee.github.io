@@ -40,9 +40,9 @@ const Skill = () => {
 
               <ListItem className='skillContainer' key={index} style={{ display: "block", width: "25%" }}>
                 <Zoom in={checked1}>
-                  <Box className='skillStack'>
-                    <img className='skillStack' width={"45%"} style={{ margin: "auto", display: "block" }} src={ele.img} />
-                    <Typography sx={{ textAlign: "center", color: "#00FF41", fontFamily: "Poppins" }}>{ele.name}</Typography>
+                  <Box className="skills-card" >
+                    <img className="skills-card-img" width={"45%"} style={{ margin: "auto", display: "block" }} src={ele.img} />
+                    <Typography className="skills-card-name" sx={{ textAlign: "center", color: "#00FF41", fontFamily: "Poppins" }}>{ele.name}</Typography>
                   </Box>
                 </Zoom>
               </ListItem>

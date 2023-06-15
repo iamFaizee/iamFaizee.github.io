@@ -43,27 +43,27 @@ const Work = () => {
 
                             <ListItem key={index} style={{ display: "block" }}>
                                 <Zoom in={checked1}>
-                                    <Box className='projects' sx={{ display: "grid", gap: "15px", backgroundColor: "#204829", padding: "0 10px", borderRadius: "5px", width: "100%", margin: "auto", height: "100%" }}>
+                                    <Box className='project-card' sx={{ display: "grid", gap: "15px", backgroundColor: "#204829", padding: "0 10px", borderRadius: "5px", width: "100%", margin: "auto", height: "100%" }}>
                                         <video autoPlay="autoplay" loop="true" muted className='projectImage' height={"240px"} width={"100%"}  >
                                             <source src={ele.img} type="video/mp4" />
                                         </video>
                                         <Box className='projectDescription' sx={{ height: "100%" }} >
                                             <Box sx={{ display: "flex", justifyContent: "space-between" }}>
                                                 <a style={{ textDecoration: "none" }} href={ele.github} target="_blank">
-                                                    <Typography sx={{ color: "#00D837", fontFamily: "Poppins" }} variant='h5'>{ele.name}</Typography>
+                                                    <Typography className="project-title" sx={{ color: "#00D837", fontFamily: "Poppins" }} variant='h5'>{ele.name}</Typography>
                                                 </a>
                                                 <Box className='iconBox' sx={{ display: "flex", justifyContent: "space-between", width: "14%" }}>
-                                                    <a style={{ textDecoration: "none", color: "white", fontSize: "1.3rem" }} href={ele.github} target={"_blank"} ><i className="fa-brands fa-github"></i></a>
-                                                    <a style={{ textDecoration: "none", color: "white", fontSize: "1.3rem" }} href={ele.live} target={"_blank"} ><i className="fa-solid fa-globe"></i></a>
+                                                    <a className="project-github-link" style={{ textDecoration: "none", color: "#00FF41", fontSize: "1.3rem" }} href={ele.github} target={"_blank"} ><i className="fa-brands fa-github"></i></a>
+                                                    <a className="project-deployed-link" style={{ textDecoration: "none", color: "#00FF41", fontSize: "1.3rem" }} href={ele.live} target={"_blank"} ><i className="fa-solid fa-globe"></i></a>
                                                 </Box>
                                             </Box>
                                             <Typography sx={{ color: "#AEF359", marginTop: "10px", fontSize: "1.1rem" }} >{ele.type} Project</Typography>
-                                            <Typography sx={{ color: "#AEF359", marginTop: "5px", fontSize: "1rem" }} >{ele.description} Project</Typography>
+                                            <Typography className="project-description" sx={{ color: "#AEF359", marginTop: "5px", fontSize: "1rem" }} >{ele.description} Project</Typography>
                                             <Box sx={{ display: "flex", justifyContent: "center", width: "fit-content", margin: "2% auto", gap: "5px" }}>
                                                 {
                                                     ele.tech.map((ele, index) => {
 
-                                                        return <img className='skillStack' width={"40px"} key={index} src={getImage(ele)} />
+                                                        return <img className="project-tech-stack" width={"40px"} key={index} src={getImage(ele)} />
 
 
                                                     })

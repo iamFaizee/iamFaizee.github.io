@@ -25,7 +25,7 @@ const Contact = () => {
         window.open("mailto:khanfaizan1123@gmail.com", "_blank");
     }
     return (
-        <Zoom id="contact" className='contactDiv' in={checked1}>
+        <Zoom id="contact" className='contactDiv' in={checked1} >
 
             <Box sx={{ width: "80%", margin: "10% auto", padding: "0% 10px" }}>
 
@@ -34,10 +34,10 @@ const Contact = () => {
 
                 <Button className='contactButton' onClick={mailTo} variant="outlined" sx={{ border: "1px solid #008F11", color: "#00FF41", fontSize: "0.9rem", margin: "auto", padding: "1% 3%", display: "block", marginTop: "2%", fontFamily: "Poppins" }}>Say Hello</Button>
                 <Box sx={{ marginTop: "2%", display: "flex", justifyContent: "center", alignContent: "center", alignItems: "center", gap: "15px" }}>
-                    <a className='socialLogo' target={"_blank"} href={details.githubLink} style={{ textDecoration: "none", color: "white", fontSize: "1.7rem" }}><i className="fa-brands fa-github"></i></a>
-                    <a className='socialLogo' target={"_blank"} href={details.linkedInLink} style={{ textDecoration: "none", color: "white", fontSize: "1.7rem" }}><i className="fa-brands fa-linkedin"></i></a>
-                    {/* <a className='socialLogo' target={"_blank"} href={details.instagramLink} style={{textDecoration:"none",color:"white",fontSize:"1.7rem"}}><i className="fa-brands fa-instagram"></i></a> */}
-                    <a className='socialLogo' target={"_blank"} href={details.mailLink} style={{ textDecoration: "none", color: "white", fontSize: "1.5rem" }}><i className="fa-regular fa-envelope"></i></a>
+                    <a className='socialLogo'  id="contact-github" target={"_blank"} href={details.githubLink} style={{ textDecoration: "none", color: "#00FF41", fontSize: "1.7rem" }}><i className="fa-brands fa-github"></i></a>
+                    <a className='socialLogo' id="contact-linkedin" target={"_blank"} href={details.linkedInLink} style={{ textDecoration: "none", color: "#00FF41", fontSize: "1.7rem" }}><i className="fa-brands fa-linkedin"></i></a>
+                    <a className='socialLogo'  id="contact-phone" target={"_blank"} href={details.phone} style={{textDecoration:"none",color: "#00FF41",fontSize:"1.5rem"}}><i class="fa-solid fa-phone"></i></a>
+                    <a className='socialLogo' id="contact-email" target={"_blank"} href={details.mailLink} style={{ textDecoration: "none", color: "#00FF41", fontSize: "1.5rem" }}><i className="fa-regular fa-envelope"></i></a>
                 </Box>
 
             </Box>

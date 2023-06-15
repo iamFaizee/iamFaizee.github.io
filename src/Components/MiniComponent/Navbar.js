@@ -82,14 +82,14 @@ const Navbar = ({ scollHandle }) => {
                 <Slide key={index} direction="down" in={checked}>
 
                   <Box
-                    className="navbarList"
                     sx={{ cursor: "pointer" }}
                     onMouseOut={() => {
                       SetHoverEffect(0);
                     }}
                     onMouseOver={() => SetHoverEffect(index + 1)}
-                  >
-                    <Typography variant="h5" sx={{ fontSize: "1.1rem", fontFamily: "Poppins", color: '#00FF41' }}>{ele}</Typography>
+                    >
+                    {console.log(ele)}
+                    <Typography className={ele?.val2} variant="h5" sx={{ fontSize: "1.1rem", fontFamily: "Poppins", color: '#00FF41' }}>{ele.val1}</Typography>
                     {hoverEffect == index + 1 ? (
                       <LinearDeterminate color={"white"} />
                     ) : (
@@ -101,9 +101,9 @@ const Navbar = ({ scollHandle }) => {
           })
         }
 
-
         <Box onClick={openResume}>
           <Button variant="outlined"
+            id="resume-button-1"
             sx={{
               border: "1px solid #008F11",
               color: "#00FF41",

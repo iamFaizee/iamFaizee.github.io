@@ -4,7 +4,7 @@ import AnimatedCursor from "react-animated-cursor"
 export default function Cursor() {
   return (
     <div className="App">
-    <AnimatedCursor
+    {/* <AnimatedCursor
       innerSize={20}
       outerSize={20}
       color='255, 255, 255'
@@ -24,7 +24,7 @@ export default function Cursor() {
         'button',
         '.link'
       ]}
-    />
+    /> */}
     </div>
   );
 }

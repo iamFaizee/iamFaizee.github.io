@@ -9,14 +9,30 @@ import hebeboutique from "./media/hebeboutique.mp4"
 export const details={
     firstname:"Faizan",
     lastname:"",
-    navList:["Home","About","Skills","Work","Contact"],
+    // navList:["Home","About","Skills","Work","Contact"],
+    navList:[{
+        val1:"Home",
+        val2:"nav-link home"
+      },{
+        val1:"About",
+        val2:"nav-link about"
+      },{
+        val1:"Skills",
+        val2:"nav-link skills"
+      },{
+        val1:"Work",
+        val2:"nav-link work"
+      },{
+        val1:"Contact",
+        val2:"nav-link contact"
+      }],
     scrollPosition:[0,545,1070,1730,3400],
-    // className:["introDiv","about section","skillContainer","workDiv","contactDiv"],
-    className:["nav-link home","nav-link about","nav-link skills","nav-link projects","nav-link contact","nav-link resume"],
+    className:["introDiv","about section","skillContainer","workDiv","contactDiv"],
+    // className:["nav-link home","nav-link about","nav-link skills","nav-link projects"],
     linkedInLink:"https://www.linkedin.com/in/faizan-khan-455216261/",
     githubLink:"https://github.com/iamFaizee",
-    instagramLink:"https://www.instagram.com/thetallboyankitr/",
-    mailLink:"mailto:ranaankitr@outlook.com",
+    phone: 9711481169,
+    mailLink:"mailto:khanfaizan1123@gmail.com",
     techStack:[
             {
                 name:"HTML",

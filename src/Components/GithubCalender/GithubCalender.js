@@ -8,8 +8,10 @@ export default function GithubCalender() {
       <Typography className='contactheading' sx={{ textAlign: "center", fontWeight: "600", color: "#00FF41", marginBottom: "2%", fontFamily: "Poppins" }} variant='h2' >My Contributions</Typography>
       <Box sx={{ textAlign: "center", width: "fit-content", margin: "auto auto 10% auto", color: "#00FF41", borderRadius: "8px", padding: "3% 1%", border: "2px solid #008F11" }}>
         <GitHubCalendar
+          className="react-activity-calendar"
 
-          color="skyblue"
+          // color="skyblue"
+          color="#00FF41"
           username="iamFaizee" />
       </Box>
     </>
