@@ -1,5 +1,5 @@
 
-<img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/54b6c068097599.5b50bca476b9b.gif" alt="Banner" />
+
 <h1 align="center">Hi 👋, I'm Faizan</h1>
 <p align="center">Fueling Your Full Stack Journey</p>
 
