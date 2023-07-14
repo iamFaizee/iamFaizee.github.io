@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.b1b93136.css",
-    "main.js": "/static/js/main.82ce92e6.js",
+    "main.css": "/static/css/main.1adf3719.css",
+    "main.js": "/static/js/main.c6fed28a.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/profilePic.png": "/static/media/profilePic.7982913c7938cab253a1.png",
     "static/media/bigbasket.png": "/static/media/bigbasket.bc5bbcc8e424205670ea.png",
+    "static/media/Faizan-Resume.pdf": "/static/media/Faizan-Resume.86f6922567e312ba1965.pdf",
     "static/media/instagram.png": "/static/media/instagram.b2e578ba6f9e72e8439a.png",
-    "static/media/Faizan-Resume.pdf": "/static/media/Faizan-Resume.58e18f54edab5cd855ee.pdf",
     "static/media/adventour.png": "/static/media/adventour.0c34fb062a4c1eac2259.png",
     "static/media/expedia.png": "/static/media/expedia.ce4bd950737be0149d0e.png",
     "static/media/portfolio.png": "/static/media/portfolio.669e6c8b838494424417.png",
-    "static/media/profilePic.jpg": "/static/media/profilePic.60f4e8aff2540d21d267.jpg",
     "static/media/logo.png": "/static/media/logo.134ea3d574f678ad06f2.png",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
-    "main.b1b93136.css.map": "/static/css/main.b1b93136.css.map",
-    "main.82ce92e6.js.map": "/static/js/main.82ce92e6.js.map",
+    "main.1adf3719.css.map": "/static/css/main.1adf3719.css.map",
+    "main.c6fed28a.js.map": "/static/js/main.c6fed28a.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1b93136.css",
-    "static/js/main.82ce92e6.js"
+    "static/css/main.1adf3719.css",
+    "static/js/main.c6fed28a.js"
   ]
 }
