@@ -51,16 +51,14 @@ const Intro = () => {
             <Typography id="subHeading" className='heading1' sx={{color:"#00FF41",fontFamily:"Poppins",fontSize:"4rem"}} variant='h1'></Typography>
         </Zoom>
         <Zoom  in={checked}>
-            <Typography  id="user-detail-intro" className='intro' sx={{color:"#00FF41",fontFamily:"Poppins",width:"65%",marginTop:"2%",fontSize:"1.4rem"}} variant='h5'>I’m a Full Stack Web Developer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products.</Typography>
+            <Typography id="user-detail-intro" className='intro' sx={{color:"#00FF41",fontFamily:"Poppins",width:"65%",marginTop:"2%",fontSize:"1.4rem"}} variant='h5'>I’m a Full Stack Web Developer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products.</Typography>
         </Zoom>
         <Scroll offset={-150} type="class" element={details.className[3]}>
             <Zoom in={checked}>
                 
                 <Button 
                 className='goToButton'
-                
                 sx={{
-                    
                     border: "1px solid #008F11",
                     color: "#00FF41",
                     fontSize: "1rem",

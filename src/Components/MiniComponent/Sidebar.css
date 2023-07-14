@@ -4,3 +4,14 @@
     transform: scale(1.1);
 }
 
+
+@media screen and (max-width:600px){
+    .sidebar a{
+       font-size: 1.2rem!important;
+    }
+}
+@media screen and (max-width:400px){
+    .sidebar a{
+       font-size: 1rem!important;
+    }
+}

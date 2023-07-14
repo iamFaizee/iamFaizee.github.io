@@ -43,10 +43,11 @@ const Work = () => {
 
                             <ListItem key={index} style={{ display: "block" }}>
                                 <Zoom in={checked1}>
-                                    <Box className='project-card' sx={{ display: "grid", gap: "15px", backgroundColor: "#204829", padding: "0 10px", borderRadius: "5px", width: "100%", margin: "auto", height: "100%" }}>
-                                        <video autoPlay="autoplay" loop="true" muted className='projectImage' height={"240px"} width={"100%"}  >
+                                    <Box className='project-card' sx={{ display: "grid", gap: "15px", backgroundColor: "#204829", padding: "10px 10px", borderRadius: "5px", width: "100%", margin: "auto", height: "100%" }}>
+                                       {/* <video autoPlay="autoplay" loop="true" muted className='projectImage' height={"240px"} width={"100%"}  >
                                             <source src={ele.img} type="video/mp4" />
-                                        </video>
+                                        </video> */}
+                                        <img src={ele.img} className='projectImage' width={"100%"} />
                                         <Box className='projectDescription' sx={{ height: "100%" }} >
                                             <Box sx={{ display: "flex", justifyContent: "space-between" }}>
                                                 <a style={{ textDecoration: "none" }} href={ele.github} target="_blank">
@@ -58,13 +59,12 @@ const Work = () => {
                                                 </Box>
                                             </Box>
                                             <Typography sx={{ color: "#AEF359", marginTop: "10px", fontSize: "1.1rem" }} >{ele.type} Project</Typography>
-                                            <Typography className="project-description" sx={{ color: "#AEF359", marginTop: "5px", fontSize: "1rem" }} >{ele.description} Project</Typography>
-                                            <Box sx={{ display: "flex", justifyContent: "center", width: "fit-content", margin: "2% auto", gap: "5px" }}>
+                                            <Typography className="project-description" sx={{ color: "#AEF359", marginTop: "5px", fontSize: "1rem" }} >{ele.description} </Typography>
+                                            <Box className="project-tech-stack" sx={{ display: "flex", justifyContent: "center", width: "fit-content", margin: "2% auto", gap: "5px" }}>
                                                 {
                                                     ele.tech.map((ele, index) => {
 
-                                                        return <img className="project-tech-stack" width={"40px"} key={index} src={getImage(ele)} />
-
+                                                        return <img className='skillStack' width={"40px"} key={index} src={getImage(ele)} />
 
                                                     })
                                                 }

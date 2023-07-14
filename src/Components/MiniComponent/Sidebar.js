@@ -19,11 +19,11 @@ const Sidebar = () => {
 
     <Slide direction='up'  in={checked}>
 
-        <Box sx={{position:"fixed",bottom:"5%",left:"4%",display:"grid",justifyContent:"center",alignContent:"center",gap:"15px"}}>
+        <Box className="sidebar" sx={{position:"fixed",bottom:"5%",left:"4%",display:"grid",justifyContent:"center",alignContent:"center",gap:"15px"}}>
             <a className='socialLogo' id="contact-github" target={"_blank"} href={details.githubLink} style={{textDecoration:"none",color: "#00FF41",fontSize:"1.7rem"}}><i className="fa-brands fa-github"></i></a>
             <a className='socialLogo' id="contact-linkedin" target={"_blank"} href={details.linkedInLink} style={{textDecoration:"none",color: "#00FF41",fontSize:"1.7rem"}}><i className="fa-brands fa-linkedin"></i></a>
-            <a className='socialLogo' id="contact-phone" target={"_blank"} href={details.phone} style={{textDecoration:"none",color: "#00FF41",fontSize:"1.5rem"}}><i class="fa-solid fa-phone"></i></a>
-            <a className='socialLogo' id="contact-email" target={"_blank"} href={details.mailLink} style={{textDecoration:"none",color: "#00FF41",fontSize:"1.5rem"}}><i className="fa-regular fa-envelope"></i></a>
+            <a className='socialLogo' id="contact-phone" target={"_blank"} href={`tel:+91${details.phone}`} style={{textDecoration:"none",color: "#00FF41",fontSize:"1.5rem"}}><i class="fa-solid fa-phone"></i></a>
+            <a className='socialLogo' id="contact-email" target={"_blank"} href={`mailto:${details.mailLink}`} style={{textDecoration:"none",color: "#00FF41",fontSize:"1.5rem"}}><i className="fa-regular fa-envelope"></i></a>
         </Box>
         
     </Slide>

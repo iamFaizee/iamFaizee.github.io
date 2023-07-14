@@ -1,8 +1,8 @@
-import esqido from "./media/esqido.mp4"
-import flixy from "./media/flixy.mp4"
-import nykaa from "./media/nykaa.mp4"
-import zomato from "./media/zomato.mp4"
-import hebeboutique from "./media/hebeboutique.mp4"
+import adventour from './media/adventour.png'
+import portfolio from './media/portfolio.png'
+import expedia from './media/expedia.png'
+import bigbasket from './media/bigbasket.png'
+import instagram from './media/instagram.png'
 
 
 
@@ -21,7 +21,7 @@ export const details={
         val2:"nav-link skills"
       },{
         val1:"Work",
-        val2:"nav-link work"
+        val2:"nav-link projects"
       },{
         val1:"Contact",
         val2:"nav-link contact"
@@ -31,8 +31,8 @@ export const details={
     // className:["nav-link home","nav-link about","nav-link skills","nav-link projects"],
     linkedInLink:"https://www.linkedin.com/in/faizan-khan-455216261/",
     githubLink:"https://github.com/iamFaizee",
-    phone: 9711481169,
-    mailLink:"mailto:khanfaizan1123@gmail.com",
+    phone: '9711481169',
+    mailLink:'khanfaizan1123@gmail.com',
     techStack:[
             {
                 name:"HTML",
@@ -82,58 +82,66 @@ export const details={
             {
                 name:"Mongo DB",
                 img:"https://img.icons8.com/color/512/mongodb.png"
+            },
+            {
+                name:"Redux",
+                img:"https://img.icons8.com/?size=512&id=jD-fJzVguBmw&format=png"
+            },
+            {
+                name:"Firebase",
+                img:"https://img.icons8.com/?size=512&id=62452&format=png"
             }
 
     ],
     projects:[
 
         {
-            name:"HebeBoutique Replica",
-            github:"https://github.com/MohitIndoriya/hebefullstack",
-            live:"https://hebeboutique.netlify.app/",
+            name:"Adventour",
+            github:"https://github.com/Bharat-Shaw/Adventour",
+            live:"https://adventour-app.vercel.app/",
             type:"Colaborative",
-            tech:["React","Chakra UI","Node JS","Mongo DB","Express JS"],
-            img:hebeboutique,
-            description:"Full Stack Application of E-Commerce Website That deals with Clothing and accessories"
+            tech:["React","Redux","Chakra UI","Firebase"],
+            img: adventour,
+            description:"Adventour is an international site for discovering and booking your destinations with our user-friendly booking website."
         },
-
+        
         {
-            name:"Esqido Replica",
-            github:"https://github.com/AnkitRana26/esqido-clone",
-            live:"https://esqido.netlify.app/",
-            type:"Colaborative",
-            tech:["React","Chakra UI"],
-            img:esqido,
-            description:"E-Commerce Web Application of Cosmetics,User can order products from Application"
-        },
-
-        {
-            name:"Zomato Replica",
-            github:"https://media1.tenor.com/images/c4e7e3d30058ef3f2cb9901a50527696/tenor.mp4?itemid=27241143",
-            live:"https://clone-zomato-project.netlify.app/",
+            name:"Instagram Replica",
+            github:"https://github.com/thisiskmv/instagram-clone",
+            live:"https://instagram-clone-ten-indol.vercel.app/",
             type:"Collaborative",
-            tech:["HTML","CSS","JavaScript"],
-            img:zomato,
-            description:"Food Ordering Platform where user can order food easily"
+            tech:["React","Redux","Chakra UI", "Firebase"],
+            img: instagram,
+            description:"Instagram is a free, online photo-sharing application and social network platform that was acquired by Facebook in 2012."
+        },
+
+        {
+            name:"Portfolio",
+            github:"https://github.com/iamFaizee/iamFaizee.github.io",
+            live:"https://iamfaizee.github.io/",
+            type:"Individual",
+            tech:["React","Chakra UI"],
+            img: portfolio,
+            description:"It's a Portfolio App anyone can see my all project, skills, contact details, about section etc."
         },
     
         {
-            name:"Nykaa Replica",
-            github:"https://github.com/Raghvendra2811/Nykaa-Web-Clone",
-            live:"https://naykaa.netlify.app/",
+            name:"Expedia Replica",
+            github:"https://github.com/seakash1204/expedia_clone",
+            live:"https://effulgent-crostata-f624a5.netlify.app/",
             type:"Collaborative",
             tech:["HTML","CSS","JavaScript","BootStrap"],
-            img:nykaa,
-            description:"E-Commerce Web Application of Cosmetics,User can order products from Application"
+            img: expedia,
+            description:"Expedia.com is an online travel agency owned by Expedia Group. The site book airline tickets, hotel reservations"
         },
         {
-            name:"Flixy Movie",
-            github:"https://github.com/AnkitRana26/Flixy",
-            live:"https://flixymovie.netlify.app/index.html",
-            type:"Individual",
+            name:"Big basket Replica",
+            github:"https://github.com/kunalgoyat999/bigbasket",
+            live:"https://dreamy-peony-b35dcc.netlify.app/",
+            type:"Collaborative",
             tech:["HTML","CSS","JavaScript"],
-            img:flixy,
-            description:"Movie Related Information Application,Gives all Information and related Media of Movies,Shows"
+            img: bigbasket,
+            description:"The best online grocery store in India. bigbasket is an online supermarket for all your daily needs."
         }
 
     ]

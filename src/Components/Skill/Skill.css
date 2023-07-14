@@ -1,5 +1,5 @@
 
-.skillStack:hover{
+.skills-card:hover{
     transition: 500ms linear;
     transform: scale(1.1);
 }
