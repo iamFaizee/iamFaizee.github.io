@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.3d86f6e5.css",
-    "main.js": "/static/js/main.eb876f1f.js",
+    "main.js": "/static/js/main.e56be823.js",
     "static/media/adventour.png": "/static/media/adventour.bc74c926d7f19c95bb97.png",
     "static/media/profilePic-modified.png": "/static/media/profilePic-modified.f5490c4b76813dc58159.png",
     "static/media/expedia.png": "/static/media/expedia.1c7ec2ada1750b62ce0a.png",
     "static/media/portfolio.png": "/static/media/portfolio.5029ed19e9222df9851f.png",
     "static/media/bigbasket.png": "/static/media/bigbasket.f633cca6ccc9dbe04c8c.png",
     "static/media/instagram.png": "/static/media/instagram.d1740ac09d8efca8c195.png",
-    "static/media/Faizan-Resume.pdf": "/static/media/Faizan-Resume.cb2ef84a91abf7873f3c.pdf",
+    "static/media/Faizan-Resume.pdf": "/static/media/Faizan-Resume.a2196fe9e63c56fce6a2.pdf",
     "static/media/movie-app.jpg": "/static/media/movie-app.154740f4228c3ad4b0a7.jpg",
     "static/media/project-6.png": "/static/media/project-6.000f10d0cd75a8e222cd.png",
     "static/media/project-2.png": "/static/media/project-2.925c302672be0e949e15.png",
@@ -19,10 +19,10 @@
     "static/media/project-1.png": "/static/media/project-1.9a925df4379f23bfa546.png",
     "index.html": "/index.html",
     "main.3d86f6e5.css.map": "/static/css/main.3d86f6e5.css.map",
-    "main.eb876f1f.js.map": "/static/js/main.eb876f1f.js.map"
+    "main.e56be823.js.map": "/static/js/main.e56be823.js.map"
   },
   "entrypoints": [
     "static/css/main.3d86f6e5.css",
-    "static/js/main.eb876f1f.js"
+    "static/js/main.e56be823.js"
   ]
 }
